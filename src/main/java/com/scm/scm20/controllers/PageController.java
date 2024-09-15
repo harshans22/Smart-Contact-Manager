@@ -15,7 +15,22 @@ public class PageController {
         model.addAttribute("God", "Everytime with you");
         System.out.println("Home Page Handler");
         return "home";
-
     }
     
+
+    // about
+    @RequestMapping("/about")
+    public String about(Model model){
+        model.addAttribute("name", "About Page loading");
+        return "about";
+    }
+
+    //services
+    @RequestMapping("/services")
+    public String services(Model model){
+        model.addAttribute("name", "Services Page loading");
+        return "services";
+    }
+
+
 }
