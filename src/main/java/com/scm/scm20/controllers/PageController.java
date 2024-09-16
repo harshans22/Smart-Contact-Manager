@@ -32,5 +32,25 @@ public class PageController {
         return "services";
     }
 
+    //contact
+    @RequestMapping("/contact")
+    public String contact(Model model){
+        model.addAttribute("name", "contact Page loading");
+        return "contact";
+    }
 
+    //login
+    @RequestMapping("/login")
+    public String login(Model model){
+        model.addAttribute("name", "contact Page loading");
+        return "login";
+    }
+
+
+    //signUp
+    @RequestMapping("/register")
+    public String signUp(Model model){
+        model.addAttribute("name", "contact Page loading");
+        return "register";
+    }
 }
